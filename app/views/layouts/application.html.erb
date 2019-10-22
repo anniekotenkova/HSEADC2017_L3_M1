@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sound Effects</title>
+    <title>Louder</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= favicon_link_tag asset_path('fav.ico') %>
-
+    <div class="logo">
+      <%= image_tag('louder.svg')  %>
+      <p>Louder</p>
+    </div>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'synth' %>
