@@ -28,26 +28,32 @@ export default class BitCrusher extends React.Component {
             current={on}
             handleClick={toggleEffect}
           />
-          <h1>BitCrusher</h1>
+          <h1>{name}</h1>
         </div>
         <div className="sliderBlock">
          <div className="slider">
-            <p>Wet</p>
+           <div className="infoEffect">
+              <p>Wet</p>
+              <p className="effectValue">{effect.wet.value}</p>
+           </div>
             <Slider
               name={name}
-              min="0"
-              max="1"
+              min={0}
+              max={1}
               value={effect.wet.value}
               handleValueChange={changeEffectWetValue}
             />
          </div>
          <div className="slider">
-            <p>Bits</p>
+            <div className="infoEffect">
+               <p>Bits</p>
+               <p className="effectValue">{effect.bits}</p>
+            </div>
             <Slider
               name={name}
-              min="1"
-              max="8"
-              value={effect.bitCrusher}
+              min={1}
+              max={8}
+              value={effect.bits}
               handleValueChange={changeBitCrusherValue}
             />
          </div>

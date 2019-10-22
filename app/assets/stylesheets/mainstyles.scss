@@ -45,6 +45,26 @@ body {
   color: #4c4c57;
 }
 
+.setValue {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+  margin-top: 20px;
+  width: 300px;
+  border-radius: $borderRadius;
+  background-color: #fff;
+
+  .knobValue {
+    p {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+
+}
+
 em {
   background-color: #ffdadf;
   color: $activeColor;

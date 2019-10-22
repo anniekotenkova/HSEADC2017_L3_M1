@@ -34,38 +34,47 @@ export default class AutoPanner extends React.Component {
             current={on}
             handleClick={toggleEffect}
           />
-          <h1>AutoPanner</h1>
+          <h1>{name}</h1>
         </div>
         <div className="sliderBlock">
           <div className="slider">
-            <p>Wet</p>
+            <div className="infoEffect">
+               <p>Wet</p>
+               <p className="effectValue">{effect.wet.value}</p>
+            </div>
             <Slider
               name={name}
-              min="0"
-              max="1"
+              min={0}
+              max={1}
               value={effect.wet}
               handleValueChange={changeEffectWetValue}
             />
           </div>
           <div className="slider">
-            <p>Frequency</p>
+            <div className="infoEffect">
+               <p>Frequency</p>
+               <p className="effectValue">{effect.frequency.value}</p>
+            </div>
             <Slider
               name={name}
               property="frequency.value"
-              min="0"
-              max="100"
+              min={0}
+              max={100}
               value={effect.frequency.value}
               handleValueChange={changeAutoPannerFrequency}
             />
           </div>
 
           <div className="slider">
-            <p>Depth</p>
+            <div className="infoEffect">
+               <p>Depth</p>
+               <p className="effectValue">{effect.depth.value}</p>
+            </div>
             <Slider
               name={name}
               property="depth.value"
-              min="0"
-              max="1"
+              min={0}
+              max={1}
               on={on}
               value={effect.depth.value}
               handleValueChange={changeAutoPannerDepth}

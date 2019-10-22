@@ -32,25 +32,31 @@ export default class Distortion extends React.Component {
             current={on}
             handleClick={toggleEffect}
           />
-          <h1>Distortion</h1>
+          <h1>{name}</h1>
         </div>
         <div className="sliderBlock">
           <div className="slider">
-            <p>Wet</p>
+            <div className="infoEffect">
+               <p>Wet</p>
+               <p className="effectValue">{effect.wet.value}</p>
+            </div>
             <Slider
               name={name}
-              min="0"
-              max="1"
+              min={0}
+              max={1}
               value={effect.wet.value}
               handleValueChange={changeEffectWetValue}
             />
           </div>
           <div className="slider">
-            <p>Distortion Value</p>
+            <div className="infoEffect">
+               <p>Distortion Value</p>
+               <p className="effectValue">{effect.distortion}</p>
+            </div>
             <Slider
               name={name}
-              min="0"
-              max="100"
+              min={0}
+              max={100}
               value={effect.distortion}
               handleValueChange={changeDistortionValue}
             />
@@ -67,7 +73,6 @@ export default class Distortion extends React.Component {
             />
           </div>
         </div>
-
       </div>
     )
   }

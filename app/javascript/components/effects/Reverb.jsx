@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Slider from '../controls/Slider'
-import BpmSlider from '../controls/BpmSlider'
 import ToggleSwitch from '../controls/ToggleSwitch'
 import PlaySwitch from '../controls/PlaySwitch'
 import Knob from '../controls/Knob'
@@ -29,7 +28,7 @@ export default class Reverb extends React.Component {
             handleClick={toggleEffect}
             value="Reverb"
           />
-          <h1>Reverb</h1>
+          <h1>{name}</h1>
         </div>
         <div className="slider">
           <p>Wet</p>

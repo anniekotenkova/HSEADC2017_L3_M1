@@ -31,11 +31,14 @@ export default class Chorus extends React.Component {
             current={on}
             handleClick={toggleEffect}
           />
-          <h1>Chorus</h1>
+          <h1>{name}</h1>
         </div>
         <div className="sliderBlock">
           <div className="slider">
-             <p>Wet</p>
+             <div className="infoEffect">
+                <p>Wet</p>
+                <p className="effectValue">{effect.wet.value}</p>
+             </div>
              <Slider
                name={name}
                min="0"
@@ -45,22 +48,28 @@ export default class Chorus extends React.Component {
              />
           </div>
           <div className="slider">
-             <p>Delay Time</p>
+             <div className="infoEffect">
+                <p>Delay Time</p>
+                <p className="effectValue">{effect.delayTime}</p>
+             </div>
              <Slider
                name={name}
-               min="0"
-               max="100"
+               min={2}
+               max={200}
                value={effect.delayTime.value}
                handleValueChange={changeChorusValue}
              />
           </div>
           <div className="slider">
-             <p>Frequency</p>
+             <div className="infoEffect">
+                <p>Frequency</p>
+                <p className="effectValue">{effect.frequency.value}</p>
+             </div>
              <Slider
                name={name}
-               min="0"
-               max="100"
-               value={effect.frequency}
+               min={0}
+               max={100}
+               value={effect.frequency.value}
                handleValueChange={changeChorusFrequency}
              />
           </div>

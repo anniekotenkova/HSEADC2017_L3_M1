@@ -28,6 +28,11 @@
     background: #ffffff;
     border-radius: 50%;
     border: $defaultBorder;
+
+    &:active{
+      background: $defaultColor;
+      transition: background-color 0.5s ease-in-out;
+    }
   }
 }
 
@@ -40,6 +45,16 @@
     margin-bottom: 70px;
     font-weight: 500;
     color: #4c4c57;
+
+    .infoEffect {
+      display: flex;
+      justify-content: space-between;
+
+      .effectValue {
+        color: $defaultColor;
+        font-weight: bold;
+      }
+    }
   }
 }
 

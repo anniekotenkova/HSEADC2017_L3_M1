@@ -10,6 +10,7 @@ export default class Chorus extends React.Component {
     super(props)
   }
 
+
   render() {
     let name = 'freeverb'
     const {
@@ -29,11 +30,14 @@ export default class Chorus extends React.Component {
             current={on}
             handleClick={toggleEffect}
           />
-          <h1>Freeverb</h1>
+          <h1>{name}</h1>
         </div>
         <div className="sliderBlock">
           <div className="slider">
-             <p>Wet</p>
+            <div className="infoEffect">
+               <p>Wet</p>
+               <p className="effectValue">{effect.wet.value}</p>
+            </div>
              <Slider
                name={name}
                min="0"
@@ -43,22 +47,28 @@ export default class Chorus extends React.Component {
              />
           </div>
           <div className="slider">
-             <p>Dampening</p>
+            <div className="infoEffect">
+               <p>Dampening</p>
+               <p className="effectValue">{effect.dampening.value}</p>
+            </div>
              <Slider
                name={name}
                min="0"
-               max="10"
-               value={effect.dampening}
+               max="3000"
+               value={effect.dampening.value}
                handleValueChange={changeFreeverbDampening}
              />
           </div>
           <div className="slider">
-             <p>Room Size</p>
+            <div className="infoEffect">
+               <p>Room Size</p>
+               <p className="effectValue">{effect.roomSize.value}</p>
+            </div>
              <Slider
                name={name}
-               min="0"
-               max="10"
-               value={effect.roomSize}
+               min={0}
+               max={1}
+               value={effect.roomSize.value}
                handleValueChange={changeFreeverbRoomSize}
              />
           </div>

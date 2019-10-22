@@ -33,7 +33,7 @@ export default class Tremolo extends React.Component {
             current={on}
             handleClick={toggleEffect}
           />
-          <h1>Tremolo</h1>
+          <h1>{name}</h1>
         </div>
         <div className="sliderBlock">
           <div className="slider">

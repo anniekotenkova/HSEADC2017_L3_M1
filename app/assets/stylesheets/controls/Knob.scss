@@ -9,11 +9,10 @@
   border: $defaultBorder;
   background: $defaultColor;
   cursor: grab;
-  margin-right: 30px;
   transition: background-color 0.5s ease;
 
   &:active {
-  
+
   }
 
   &::before {
