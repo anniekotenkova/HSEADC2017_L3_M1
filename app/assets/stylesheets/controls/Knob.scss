@@ -1,0 +1,29 @@
+@import "basics.scss";
+@import "fonts.scss";
+
+.Knob {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  border: $defaultBorder;
+  background: $defaultColor;
+  cursor: grab;
+  margin-right: 30px;
+  transition: background-color 0.5s ease;
+
+  &:active {
+  
+  }
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 2px);
+    display: block;
+    content: '';
+    width: 20%;
+    height: 20%;
+    background: #ff6577;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,9 @@
+@import "basics.scss";
+@import "fonts.scss";
+
+.ButtonSet {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  color: $defaultColor;
+}

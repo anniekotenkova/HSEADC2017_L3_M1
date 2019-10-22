@@ -1,0 +1,64 @@
+@import "basics.scss";
+@import "fonts.scss";
+
+* {
+  outline: none;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $backgroundColor;
+  margin: 1.875em;
+  font-family: $defaultFontFamily;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $defaultColor;
+}
+
+.synthBody {
+  display: flex;
+  justify-content: row;
+}
+
+.titleBlock {
+  font-size: 4.563em;
+  font-weight: 700;
+  width: 500px;
+  margin-bottom: 70px;
+}
+
+.infoBlock {
+  font-size: 1.375em;
+  margin-bottom: 10px;
+  line-height: 28px;
+  width: 430px;
+}
+
+.descriptionBlock {
+  font-size: 0.750em;
+  margin-bottom: 30px;
+  line-height: 18px;
+  width: 430px;
+  font-weight: 500;
+  color: #4c4c57;
+}
+
+em {
+  background-color: #ffdadf;
+  color: $activeColor;
+}
+
+.startBlock{
+  margin-right: 3.438em;
+  border-right: 0.063em solid rgba(0, 0, 76, 0.07);
+  position: fixed;
+  // top: 12%;
+}
+
+.effectsBlock {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 35.125em;
+}

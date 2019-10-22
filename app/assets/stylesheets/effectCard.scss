@@ -1,0 +1,27 @@
+@import "basics.scss";
+@import "fonts.scss";
+
+.Effect {
+  width: 20.688em;
+  height: 25.625em;
+  font-weight: 500;
+  color: #4c4c57;
+  background-color: #FFFF;
+  padding: 20px 32px;
+  border-radius: $borderRadius;
+  margin: 0 20px 20px 0;
+
+  .effectOn {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 1.500em;
+    color: $defaultColor;
+    font-weight: bold;
+  }
+
+}

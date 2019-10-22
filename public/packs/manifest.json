@@ -1,0 +1,44 @@
+{
+  "application.js": "/packs/js/application-35c999063cd1e7939c3b.js",
+  "application.js.map": "/packs/js/application-35c999063cd1e7939c3b.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-35c999063cd1e7939c3b.js"
+      ],
+      "js.map": [
+        "/packs/js/application-35c999063cd1e7939c3b.js.map"
+      ]
+    },
+    "server_rendering": {
+      "js": [
+        "/packs/js/server_rendering-2f25c418bd8b7c750cf5.js"
+      ],
+      "js.map": [
+        "/packs/js/server_rendering-2f25c418bd8b7c750cf5.js.map"
+      ]
+    },
+    "synth": {
+      "js": [
+        "/packs/js/synth-a9ca3ecd7b65c7110c39.js"
+      ],
+      "js.map": [
+        "/packs/js/synth-a9ca3ecd7b65c7110c39.js.map"
+      ]
+    },
+    "thereminvox": {
+      "js": [
+        "/packs/js/thereminvox-792b97217d93383dece3.js"
+      ],
+      "js.map": [
+        "/packs/js/thereminvox-792b97217d93383dece3.js.map"
+      ]
+    }
+  },
+  "server_rendering.js": "/packs/js/server_rendering-2f25c418bd8b7c750cf5.js",
+  "server_rendering.js.map": "/packs/js/server_rendering-2f25c418bd8b7c750cf5.js.map",
+  "synth.js": "/packs/js/synth-a9ca3ecd7b65c7110c39.js",
+  "synth.js.map": "/packs/js/synth-a9ca3ecd7b65c7110c39.js.map",
+  "thereminvox.js": "/packs/js/thereminvox-792b97217d93383dece3.js",
+  "thereminvox.js.map": "/packs/js/thereminvox-792b97217d93383dece3.js.map"
+}
