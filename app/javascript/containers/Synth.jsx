@@ -788,7 +788,7 @@ export default class Synth extends React.Component {
               />
             </div>
           </div>
-          <p className="infoBlock">Here you can find some basic settings. You can change loop <em> BPM </em> and <em>volume</em></p>
+          <p className="infoBlock">Here you can find some basic settings. You&nbsp;can change loop <em> BPM </em> and <em>volume</em></p>
           <div className="setValue">
             <div className="knobValue">
               <Knob
