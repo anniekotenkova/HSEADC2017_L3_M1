@@ -74,6 +74,7 @@ em {
   margin-right: 3.438em;
   border-right: 0.063em solid rgba(0, 0, 76, 0.07);
   position: fixed;
+  margin-top: 65px;
   // top: 12%;
 }
 
@@ -81,8 +82,8 @@ em {
 .logo {
   display: flex;
   flex-direction: row;
-  margin-bottom: 40px;
   align-items: center;
+  position: fixed;
 
   img {
     width: 30px;

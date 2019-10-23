@@ -36,11 +36,17 @@ export default class NoiseSynth extends React.Component {
 
     return (
       <div className="Effect">
-        <ToggleSwitch value="Synth" current={on} handleClick={togglePlay} />
-
-        <div className="controlsContainer">
-          <div className="controlsRow">
-            <h2>Attack</h2>
+        <div className="effectOn">
+          <ToggleSwitch
+            current={on}
+            handleClick={togglePlay}
+            value="Synth"
+          />
+          <h1>{synth}</h1>
+        </div>
+        <div className="sliderBlock">
+          <div className="slider">
+            <p>Attack</p>
             <Slider
               name={synth}
               property="attack"
@@ -49,9 +55,10 @@ export default class NoiseSynth extends React.Component {
               value={attack}
               handleValueChange={this.handleValueChange}
             />
-
-            <h2>Decay</h2>
-            <Slider
+          </div>
+          <div className="slider">
+            <p>Decay</p>
+            <Knob
               name={synth}
               property="decay"
               min="0"
@@ -59,8 +66,9 @@ export default class NoiseSynth extends React.Component {
               value={decay}
               handleValueChange={this.handleValueChange}
             />
-
-            <h2>Sustain</h2>
+          </div>
+          <div className="slider">
+            <p>Sustain</p>
             <Slider
               name={synth}
               property="sustain"

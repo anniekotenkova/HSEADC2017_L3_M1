@@ -748,7 +748,11 @@ export default class Synth extends React.Component {
       loop3,
       loop4
     } = this.state
-    let { toggleEffect } = this
+    let {
+      toggleEffect,
+      changeEffectWetValue,
+      changeEffectValue,
+    } = this
     return (
       <section className="synthBody">
         <div className="startBlock">
@@ -784,7 +788,7 @@ export default class Synth extends React.Component {
               />
             </div>
           </div>
-          <p className="infoBlock">Here you can find some basic settings. You can change loop <em> BPM </em> and volume</p>
+          <p className="infoBlock">Here you can find some basic settings. You can change loop <em> BPM </em> and <em>volume</em></p>
           <div className="setValue">
             <div className="knobValue">
               <Knob
